@@ -1,0 +1,1 @@
+echo CTF{privilege_escalation_suid_pwned} > flag.txt

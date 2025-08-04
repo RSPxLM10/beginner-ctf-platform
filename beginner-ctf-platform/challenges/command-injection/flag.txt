@@ -1,0 +1,1 @@
+CTF{command_injection_zch9np3i}
