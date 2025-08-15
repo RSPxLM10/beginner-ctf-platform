@@ -36,6 +36,27 @@ class CTFDeployer:
                 'port': 8082,
                 'flag_format': 'CTF{command_injection_RANDOM}',
                 'image': 'command-injection-ctf'
+            },
+            'privilege-escalation': {
+                'name': 'Linux Privilege Escalation',
+                'path': '../challenges/privilege-escalation',
+                'port': 8083,
+                'flag_format': 'CTF{privilege_escalation_RANDOM}',
+                'image': 'privilege-escalation-ctf'
+            },
+            'buffer-overflow': {
+                'name': 'Buffer Overflow Binary Exploitation',
+                'path': '../challenges/buffer-overflow',
+                'port': 8084,
+                'flag_format': 'CTF{buffer_overflow_RANDOM}',
+                'image': 'buffer-overflow-ctf'
+            },
+            'advanced-network': {
+                'name': 'Advanced Multi-Service Corporate Network',
+                'path': '../challenges/advanced-network',
+                'port': 8085,
+                'flag_format': 'CTF{advanced_network_RANDOM}',
+                'image': 'advanced-network-ctf'
             }
         }
     
@@ -54,7 +75,7 @@ class CTFDeployer:
     def list_challenges(self):
         """List available challenges"""
         print("\n🎯 Available CTF Challenges:")
-        print("=" * 50)
+        print("=" * 60)
         for key, challenge in self.challenges.items():
             print(f"🔥 {key}: {challenge['name']}")
             print(f"   Port: {challenge['port']}")
@@ -121,7 +142,7 @@ class CTFDeployer:
         
         for key in self.challenges.keys():
             self.deploy_challenge(key)
-            print("-" * 50)
+            print("-" * 60)
         
         print("\n🎉 All challenges deployed!")
         print("\n🌐 Access your challenges:")
@@ -134,11 +155,12 @@ if __name__ == "__main__":
     if len(sys.argv) < 2:
         deployer.list_challenges()
         print("\nCommands:")
-        print("  python deploy.py <challenge-key>  - Deploy single challenge")
-        print("  python deploy.py all              - Deploy all challenges")
+        print("  python3 deploy.py <challenge-key>  - Deploy single challenge")
+        print("  python3 deploy.py all              - Deploy all challenges")
         print("\nExamples:")
-        print("  python deploy.py file-upload")
-        print("  python deploy.py all")
+        print("  python3 deploy.py file-upload")
+        print("  python3 deploy.py advanced-network")
+        print("  python3 deploy.py all")
     elif sys.argv[1] == "all":
         deployer.deploy_all()
     else:
