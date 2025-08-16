@@ -1,8 +1,7 @@
-# 🏆 Professional CTF Platform - Elite Football Security Challenges
+# Professional CTF Platform - Security Challenges
 
-A comprehensive Capture The Flag (CTF) platform featuring 6 advanced cybersecurity challenges themed around elite football clubs. Built for educational purposes and penetration testing training.
-
-## 🎯 Challenge Overview
+A comprehensive Capture The Flag (CTF) platform featuring 6 advanced cybersecurity challenges themed around elite football clubs.
+##  Challenge Overview
 
 | Challenge | Club Theme | Vulnerability Type | Difficulty | Port |
 |-----------|------------|-------------------|------------|------|
@@ -13,7 +12,7 @@ A comprehensive Capture The Flag (CTF) platform featuring 6 advanced cybersecuri
 | **Chelsea Development** | Buffer Overflow | Binary Exploitation | Expert | 8084 |
 | **Messi Academy Corporate** | Multi-Service Network | Advanced Network Penetration | Expert | 8085 |
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Docker Desktop installed and running
