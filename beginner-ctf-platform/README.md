@@ -23,7 +23,7 @@ A comprehensive Capture The Flag (CTF) platform featuring 6 advanced cybersecuri
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/beginner-ctf-platform.git
+git clone https://github.com/RSPxLM10/beginner-ctf-platform.git
 cd beginner-ctf-platform
 
 # Create virtual environment (recommended)
